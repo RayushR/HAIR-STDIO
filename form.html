@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ Hair Studio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:wght@100&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+
+</head>
+<body>
+<section id="banner">
+<img src="./logo.png" class="logo">
+<
+    <div id="sidenav">
+        <nav>
+        <ul>
+            <li><a href="#banner">HOME</a></li>
+            <li><a href="#features">FEATURES</a></li>
+            <li><a href="#Service">SERVICES</a></li>
+            <li><a href="#testimonial">TESTIMONIALS</a></li>
+            <li><a href="#footer">MEET US</a></li>
+            <li><a href="./form.html">Account</a></li>
+        </ul>
+        </nav>
+    </div>
+    <div id="menubtn">
+        <img src="./menu.png" id="menu">
+    </div>
+                      <form>    
+            
+                        <h2 class="text-warning text-center pt-5 " >Registration Page</h2>  
+            
+                          <label>     
+            
+                          <input type="text" class="input" name="email" placeholder="username"/>                   <div class="line-box">          
+            
+                          <div class="line"></div>        
+            
+                          </div>    
+            
+                        </label>     
+            
+                        
+            
+                        <label>     
+            
+                          <input 
+            
+                                 type="password" 
+            
+                                 class="input" 
+            
+                                 name="text" 
+            
+                                 placeholder="Phone no."/>        
+            
+                          <div class="line-box">          
+            
+                            <div class="line"></div>        
+            
+                          </div>    
+            
+                        </label>     
+          <!-- <textarea name="" id="" cols="30" rows="10"></textarea> -->
+                        <textarea rows="7"  cols="0" name="message" placeholder="Message " required></textarea>
+                        
+            
+                        <!-- <a href="./hair stduio.html"><button type="submit">submit</button></a> -->
+                        <a href="./hair stduio.html"><button type="submit">submit</button></a>
+            
+                      </form> 
+            
+                  </div> 
+           
+</form>
+<script>
+    var menubtn = document.getElementById("menubtn") 
+    var sidenav = document.getElementById("sidenav") 
+    var menu = document.getElementById("menu") 
+    sidenav.style.right="-250px";
+    menubtn.onclick=function(){
+        if(sidenav.style.right == "-250px"){
+         sidenav.style.right ="0"; 
+         menu.src="./close.png";
+        }
+        else{
+            sidenav.style.right="-250px";
+            menu.src="./menu.png";
+        }
+     }
+     var scroll = new SmoothScroll('a[href*="#"]', {
+ speed: 300
+});
+</script>
+
+</body>
+</html>
